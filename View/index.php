@@ -104,7 +104,7 @@ if(!empty($_SESSION['id'])){
 
                         <div class="opcao3">
 
-                            <a href="../quiz/quiz.html" class="link_opcoes">
+                            <a href="../quiz/quiz.php" class="link_opcoes">
 
                                 <div class="zona_imagemop3">
                                     <img src="../img/prediag.png" class="imagem_opcao3">
@@ -269,7 +269,7 @@ if(!empty($_SESSION['id'])){
 
                         <div class="opcao3">
 
-                            <a href="../quiz/quiz.html" class="link_opcoes">
+                            <a href="../quiz/quiz.php" class="link_opcoes">
 
                                 <div class="zona_imagemop3">
                                     <img src="../img/prediag.png" class="imagem_opcao3">
