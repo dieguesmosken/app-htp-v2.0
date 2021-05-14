@@ -59,6 +59,7 @@ if(!empty($_SESSION['id'])){
                     <li><a href="profile.php"> PERFIL </a></li>
                     <li><a href="#"> DOENÇAS </a></li>
                     <li><a href="sobre.php"> SOBRE </a></li>
+                    <li><a href="Termos/politica.php"> Termos </a></li>
                     <li><a href="index.php" onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>
                             Sair</a></li>
                 </ul>
@@ -224,6 +225,7 @@ if(!empty($_SESSION['id'])){
                     <li><a href="profile.php"> PERFIL </a></li>
                     <li><a href="#"> DOENÇAS </a></li>
                     <li><a href="sobre.php"> SOBRE </a></li>
+                    <li><a href="Termos/politica.php"> Termos </a></li>
                     <li><a href="index.php" onclick="javascript:window.close()"><i class="fas fa-sign-out-alt"></i>
                             Sair</a></li>
                 </ul>

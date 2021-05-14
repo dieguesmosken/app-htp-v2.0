@@ -65,6 +65,7 @@ if(!empty($_SESSION['id'])){
                     <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
                                 class="fas fa-times"></i></a></li>
                     <li><a href="#"><?php echo $_SESSION['nome'];?></a></li>
+                    <li><a href="Termos/politica.php"> Termos </a></li>
                     <li><a href="#"> DOENÇAS </a></li>
                     <li><a href="sobreapp.php"> SOBRE </a></li>
                     <li><a href="index.php"> INICIO </a></li>
