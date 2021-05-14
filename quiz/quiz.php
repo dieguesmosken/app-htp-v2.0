@@ -80,7 +80,7 @@
         <div class="tela_final">
             <h1>RESULTADO FINAL</h1>
             <p>Você pode estar <span id="result" style="color:gold"></span> </p>
-            <a href="../index.html">SAIR</a>
+            <a href="../View/index.php">SAIR</a>
             <a onclick="location.reload();">Refazer</a>
         </div><!--tela_final-->
     </section>
