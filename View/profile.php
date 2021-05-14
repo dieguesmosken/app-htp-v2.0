@@ -92,17 +92,17 @@ if(!empty($_SESSION['id'])){
                 echo "<ul>";
                    
                 
-                    echo "<li><p><b>ID User: </b>".$_SESSION['id']."</p></li>";
-                    echo "<li><p><b>Nome User: </b>".$_SESSION['nome']."</p></li>";
-                    echo "<li><p><b>Email User: </b>".$_SESSION['email']."</p></li>";
-                    echo "<li><p><b>Cpf User: </b>".$_SESSION['cpf_usr']."</p></li>";
-                    echo "<li><p><b>Data Nasc: </b>".$_SESSION['dtnasc']."</p></li>";
+                    echo "<li><p><b>ID <i class='fas fa-key'></i>: </b>".$_SESSION['id']."</p></li>";
+                    echo "<li><p><b>Nome <i class='fas fa-user'></i>: </b>".$_SESSION['nome']."</p></li>";
+                    echo "<li><p><b>Email <i class='fas fa-envelope'></i>: </b>".$_SESSION['email']."</p></li>";
+                    echo "<li><p><b>Cpf <i class='fas fa-code'></i>: </b>".$_SESSION['cpf_usr']."</p></li>";
+                    echo "<li><p><b>DTNasc <i class='fas fa-calendar-alt'></i>: </b>".$_SESSION['dtnasc']."</p></li>";
                     
                     if($_SESSION['tipousr'] == 1){
-                        echo "<li><p><b>Tipo User: </b>".$_SESSION['tipousr']." - Usuario Administador</p></li>";
+                        echo "<li><p><b>Tipo <i class='fas fa-user-shield'></i>: </b>".$_SESSION['tipousr']." - Usuario Administador</p></li>";
                        
                     }else{
-                        echo "<li><p><b>Tipo User: </b>".$_SESSION['tipousr']." - Usuario Comum</p></li>";
+                        echo "<li><p><b>Tipo <i class='fas fa-user-cog'></i>: </b>".$_SESSION['tipousr']." - Usuario Comum</p></li>";
                        
                     }
                 
