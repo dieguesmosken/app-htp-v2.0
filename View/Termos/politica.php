@@ -26,10 +26,10 @@
         consentimento livre, expresso e informado. Se o usuário não concordar com a política de tratamento de dados
         descrita nesse documento, não deve utilizar a Plataforma.</p>
 
-    <p>O usuário poderá verificar o conteúdo desta Política diretamente por meio do link: localhost/termos/politica.php
+    <p>O usuário poderá verificar o conteúdo desta Política diretamente por meio do link:<a href="http://localhost/2021/hpt_V2.0/View/Termos/politica.php">Politica de Privacidade</a>
     </p>
 
-    <p>Caso reste alguma dúvida entre em contato conosco, pela central de atendimento no link: localhost/fale-conosco/
+    <p>Caso reste alguma dúvida entre em contato conosco, pela central de atendimento no link: <a href="http://localhost/2021/hpt_V2.0/View/Termos/fale-conosco/" target="_blank">Fale Conosco</a>
         ou pelo e-mail atendimento.hippotec@gmail.com</p>
 
 
