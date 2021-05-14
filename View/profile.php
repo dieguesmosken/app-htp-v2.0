@@ -113,7 +113,7 @@ if(!empty($_SESSION['id'])){
                
                
 	            ?>
-                    </div>
+                    
 
                 </div>
             </div>
