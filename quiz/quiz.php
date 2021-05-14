@@ -12,7 +12,7 @@
             <h1>PréDiag</h1>
 
             <div class="seta-voltar">
-                <a href="../index.html">
+                <a href="../View/index.php">
                     <img src="imagens/setaVoltar.svg" alt="...">
                 </a>
             </div><!--seta-voltar-->
