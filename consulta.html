@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+   
+    <link rel="stylesheet" type="text/css" href="css/ionic.css" />
+    <title>Projeto BD</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var url = "http://localhost/curso/consulta.php";
+            $.getJSON(url, function(result) {
+                console.log(result);
+                $.each(result, function(i, field) {
+                    var id = field.id;
+                    var title = field.titulo;
+                    var duration  = field.duracao;
+                    var price = field.preco;
+                    
+                    $("#listview").append("<a class='item' id=" +id+ "&title=" +title+ "&duration=" +duration+ "&price=" +price+ "'><span class='item-note'><h2>" + price + "</h2></span>" + title + "<p>" + duration + "</p></a>");
+                });
+            });
+        });
+        </script>
+</head>
+
+<body>
+    <div class="bar bar-hearder bar-positive" style="margin-bottom: 80px;background-color: green;">
+        <a href="index.html" class="button button-clear">Home</a>
+        <h1 class="title">Consulta</h1>
+       
+    </div>
+    <br>
+    <br>
+    <ul class="list" id="listview">
+       
+        
+    </ul>
+</body>
+
+</html>
