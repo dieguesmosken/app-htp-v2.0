@@ -64,6 +64,7 @@ if(!empty($_SESSION['id'])){
                 <ul>
                     <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
                                 class="fas fa-times"></i></a></li>
+                    <li><a href="#"><?php echo $_SESSION['nome'];?></a></li>
                     <li><a href="#"> DOENÇAS </a></li>
                     <li><a href="sobreapp.php"> SOBRE </a></li>
                     <li><a href="index.php"> INICIO </a></li>
@@ -113,23 +114,23 @@ if(!empty($_SESSION['id'])){
                
                
 	            ?>
-                    
 
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="../js/jquery.min.js"></script>
-    <script>
-    function openNav() {
-        document.getElementById("sidenav").style.width = "300px";
-    }
+        <script src="../js/jquery.min.js"></script>
+        <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "300px";
+        }
 
-    function closeNav() {
-        document.getElementById("sidenav").style.width = "0";
-    }
-    </script>
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+        </script>
 </body>
 
 </html>
