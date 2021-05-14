@@ -9,7 +9,7 @@ if($btnLogin){
 	$senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
 	//echo "$email - $senha";
 	if((!empty($email)) AND (!empty($senha))){
-		//Gerar a senha criptografa
+		//Gerar a senha criptografada
 		echo password_hash($senha, PASSWORD_DEFAULT);
 		//Pesquisar o usuário no BD
 		$result_usuario = "SELECT * FROM hpt_usr WHERE email_usr='$email' LIMIT 1";
@@ -38,9 +38,8 @@ if($btnLogin){
 				header("Location: login.php");
 			
 			}
-			}
-			
 		}
+	}
 	}else{
 		$_SESSION['msg'] = "Login e senha incorreto 2!";
 		header("Location: login.php");
