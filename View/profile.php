@@ -71,22 +71,24 @@ if(!empty($_SESSION['id'])){
                 </ul>
             </div>
             <div class="news">
-                <h2 class="h2 underline highlight" style="text-align: center;">Hippotec</h2>
+                <?php
+                echo "<h2 class='h5 underline highlight' style='text-align: center;'>".$_SESSION['nome']."</h2>";
+                ?>
                 <br>
                 <div class="news">
 
                     <div class="personal1"><?php
                     if($_SESSION['id'] == 1){
-                        echo "<br><img src='../img/User/matheus.png' width='50%' height='50%' alt='User_Avatar'>";
+                        echo "<br><img src='../img/User/matheus.png' class='img_user' width='50%' height='50%' alt='User_Avatar'>";
                     }
 
                     else if($_SESSION['id'] == 3){
-                        echo "<br><img src='../img/User/bruno.png' width='50%' height='50%' alt='User_Avatar'>";
+                        echo "<br><img src='../img/User/bruno.png' class='img_user' width='50%' height='50%' alt='User_Avatar'>";
                     }else{
-                        echo "<br><img src='../img/User/empty.png' width='50%' height='50%' alt='User_Avatar_Empty'>";
+                        echo "<br><img src='../img/User/empty.png' class='img_user' width='50%' height='50%' alt='User_Avatar_Empty'>";
                     }
                     
-                    
+                    echo "</div>";
                 echo "<ul>";
                    
                 
