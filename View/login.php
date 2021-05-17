@@ -37,7 +37,21 @@ session_start();
 	    <div class="sidenav" id="sidenav">
 				<div class="sidenavshape"></div>
 				<div class="profile">
-					<img src="../img/avatar.jpg" alt="avatar">
+				<?php
+                    if(!empty($_SESSION['id'])){
+                        if($_SESSION['id'] == 1){
+                            echo "<br><img src='../img/User/matheus.png' width='50%' height='50%' alt='User_Avatar'>";
+                        }
+    
+                        else if($_SESSION['id'] == 3){
+                            echo "<br><img src='../img/User/bruno.png' width='50%' height='50%' alt='User_Avatar'>";
+                        }else{
+                            echo "<br><img src='../img/User/empty.png' width='50%' height='50%' alt='User_Avatar_Empty'>";
+                        }
+                    }else{
+                        echo "<br><img src='../img/avatar.jpg' width='50%' height='50%' alt='User_Empty'>";
+                    }
+                    ?>
 					<h3 style="color:white;">Menu</h3>
 		 </div>
 		     <!-- Itens do Menu Lateral  --> 
@@ -49,7 +63,7 @@ session_start();
 					<li><a href="sobre.php"> SOBRE  </a></li>
 					<li><a href="Termos/politica.php"> Termos  </a></li>
 					<li><a href="index.php"> INICIO  </a></li>
-                   	<li><a href="index.php" onclick="javascript:window.close()"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                   	<li><a href="sair.php" onclick="javascript:window.close()"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
 				</ul> 
 		</div>
 		

@@ -40,11 +40,20 @@ if(!empty($_SESSION['id'])){
                 <div class="sidenavshape"></div>
                 <div class="profile">
                 <?php
-                    if($_SESSION['id'] == 1){
-                        echo "<br><img src='../img/User/matheus.png' width='50%' height='50%' alt='User_Avatar'>";
+                    if(!empty($_SESSION['id'])){
+                        if($_SESSION['id'] == 1){
+                            echo "<br><img src='../img/User/matheus.png' width='50%' height='50%' alt='User_Avatar'>";
+                        }
+    
+                        else if($_SESSION['id'] == 3){
+                            echo "<br><img src='../img/User/bruno.png' width='50%' height='50%' alt='User_Avatar'>";
+                        }else{
+                            echo "<br><img src='../img/User/empty.png' width='50%' height='50%' alt='User_Avatar_Empty'>";
+                        }
                     }else{
-                        echo "<br><img src='../img/User/empty.png' width='50%' height='50%' alt='User_Avatar_Empty'>";
-                    }?>
+                        echo "<br><img src='../img/avatar.jpg' width='50%' height='50%' alt='User_Empty'>";
+                    }
+                    ?>
                     
                     <h3 style="color:white;">Menu</h3>
                 </div>
@@ -55,7 +64,11 @@ if(!empty($_SESSION['id'])){
                     <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
                                 class="fas fa-times"></i></a></li>
 
-                    <li><a href="#"><?php echo $_SESSION['nome'];?></a></li>
+                    <li><a href="#"><?php if (!empty($_SESSION['nome'])) {
+                         echo $_SESSION['nome'];
+                    }else{
+                       echo  "Usuario Não Identificado";
+                    }?></a></li>
                     <li><a href="profile.php"> PERFIL </a></li>
                     <li><a href="#"> DOENÇAS </a></li>
                     <li><a href="sobre.php"> SOBRE </a></li>

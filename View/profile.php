@@ -81,57 +81,97 @@ if(!empty($_SESSION['id'])){
 
                     <div class="personal1"><?php
                     if($_SESSION['id'] == 1){
-                        echo "<br><img src='../img/User/matheus.png' class='img_user' width='50%' height='50%' alt='User_Avatar'>";
+                        echo "<br><img src='../img/User/matheus.png' class='img_personal1' width='50%' height='50%' alt='User_Avatar'>";
                     }
 
                     else if($_SESSION['id'] == 3){
-                        echo "<br><img src='../img/User/bruno.png' class='img_user' width='50%' height='50%' alt='User_Avatar'>";
+                        echo "<br><img src='../img/User/bruno.png' class='img_personal1' width='50%' height='50%' alt='User_Avatar'>";
                     }else{
-                        echo "<br><img src='../img/User/empty.png' class='img_user' width='50%' height='50%' alt='User_Avatar_Empty'>";
+                        echo "<br><img src='../img/User/empty.png' class='img_personal1' width='50%' height='50%' alt='User_Avatar_Empty'>";
                     }
-                    
-                    echo "</div>";
-                echo "<ul>";
-                   
-                
-                    echo "<li><p><b>ID <i class='fas fa-key'></i>: </b>".$_SESSION['id']."</p></li>";
-                    echo "<li><p><b>Nome <i class='fas fa-user'></i>: </b>".$_SESSION['nome']."</p></li>";
-                    echo "<li><p><b>Email <i class='fas fa-envelope'></i>: </b>".$_SESSION['email']."</p></li>";
-                    echo "<li><p><b>Cpf <i class='fas fa-code'></i>: </b>".$_SESSION['cpf_usr']."</p></li>";
-                    echo "<li><p><b>DTNasc <i class='fas fa-calendar-alt'></i>: </b>".$_SESSION['dtnasc']."</p></li>";
-                    
-                    if($_SESSION['tipousr'] == 1){
-                        echo "<li><p><b>Tipo <i class='fas fa-user-shield'></i>: </b>".$_SESSION['tipousr']." - Usuario Administador</p></li>";
-                       
-                    }else{
-                        echo "<li><p><b>Tipo <i class='fas fa-user-cog'></i>: </b>".$_SESSION['tipousr']." - Usuario Comum</p></li>";
-                       
-                    }
-                
-                   
-                    echo "<p><a href='sair.php'>Sair</a></p>";
-                    
-                echo "</ul>";
-               
-               
-	            ?>
-
-
+                    ?>
                     </div>
+                    <ul>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <?php
+                        echo "<li><p><b>ID <i class='fas fa-key'></i>: </b>".$_SESSION['id']."</p></li>";
+                        ?>
+                                </div>
+
+                                <div class="col">
+                                    <?php
+                        echo "<li><p><b>DTNasc <i class='fas fa-calendar-alt'></i>: </b>".$_SESSION['dtnasc']."</p></li>";
+                        ?>
+                                </div>
+                                <div class="col">
+                                    <?php
+                        if($_SESSION['tipousr'] == 1){
+                            echo "<li><p><b>Tipo <i class='fas fa-user-shield'></i>: </b>".$_SESSION['tipousr']." - Usuario Administador</p></li>";
+                           
+                        }else{
+                            echo "<li><p><b>Tipo <i class='fas fa-user-cog'></i>: </b>".$_SESSION['tipousr']." - Usuario Comum</p></li>";
+                           
+                        }
+                        ?>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <?php
+                        echo "<li><p><b>Nome <i class='fas fa-user'></i>: </b>".$_SESSION['nome']."</p></li>";
+                        ?>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <?php
+                        echo "<li><p><b>Email <i class='fas fa-envelope'></i>: </b>".$_SESSION['email']."</p></li>";
+                        ?>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <?php
+                        echo "<li><p><b>Cpf <i class='fas fa-code'></i>: </b>".$_SESSION['cpf_usr']."</p></li>";
+?>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-info"><a href="sair.php">Sair</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </ul>
+
+
+
+
+
                 </div>
             </div>
         </div>
+    </div>
 
-        <script src="../js/jquery.min.js"></script>
-        <script>
-        function openNav() {
-            document.getElementById("sidenav").style.width = "300px";
-        }
+    <script src="../js/jquery.min.js"></script>
+    <script>
+    function openNav() {
+        document.getElementById("sidenav").style.width = "300px";
+    }
 
-        function closeNav() {
-            document.getElementById("sidenav").style.width = "0";
-        }
-        </script>
+    function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+    }
+    </script>
 </body>
 
 </html>

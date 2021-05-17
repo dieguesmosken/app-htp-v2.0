@@ -3,10 +3,7 @@
     margin: 0;
     padding: 0;
 }
-img{
-  text-align: center;
-  border-radius: 50%;
-}
+
 body
 {
   background: black;	
@@ -189,6 +186,7 @@ body
   width: 100px;
   background-color: rgba(66, 244, 104, 0.4);
   border:5px solid #00BFFF;
+  border-radius: 50%;
   float: right;
   margin: 0 25px;
 }
@@ -231,6 +229,11 @@ body
   text-align: center;
   display: block;
   padding: auto;
+}
+.img_personal1{
+  text-align: center;
+  border-radius: 50%;
+  border:5px solid #00BFFF;
 }
   
 	
