@@ -34,18 +34,18 @@ if($btnLogin){
 				$_SESSION['cpf_usr'] = $row_usuario['cpf_usr'];
 				header("Location: index.php");
 			}else{
-				$_SESSION['msg'] = "Login e senha incorreto1!";
+				$_SESSION['msg'] = "User não encontrado ou senha incorreta!";
 				header("Location: login.php");
 			
 			}
 		}
 	}
 	}else{
-		$_SESSION['msg'] = "Login e senha incorreto 2!";
+		$_SESSION['msg'] = "Os Campos não podem estar vazios!";
 		header("Location: login.php");
 	}
 }else{
-	$_SESSION['msg'] = "Página não encontrada";
+	$_SESSION['msg'] = " :( Por que vc fez isso?";
 	header("Location: login.php");
 }
 ?>
