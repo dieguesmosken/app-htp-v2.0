@@ -80,15 +80,15 @@ if(!empty($_SESSION['id'])){
                 <div class="news">
 
                     <div class="personal1"><?php
-                    if($_SESSION['id'] == 1){
-                        echo "<br><img src='../img/User/matheus.png' class='img_personal1' width='50%' height='50%' alt='User_Avatar'>";
-                    }
-
-                    else if($_SESSION['id'] == 3){
-                        echo "<br><img src='../img/User/bruno.png' class='img_personal1' width='50%' height='50%' alt='User_Avatar'>";
-                    }else{
-                        echo "<br><img src='../img/User/empty.png' class='img_personal1' width='50%' height='50%' alt='User_Avatar_Empty'>";
-                    }
+                  
+                        
+                    
+                        if(!empty($_SESSION['id'])){
+                            echo "<br><img src='../img/User/img_user".$_SESSION['id'].".png' class='img_personal1' width='50%' height='50%' alt='img_user".$_SESSION['id'].".png'>";
+                        }else{
+                            echo "<br><img src='../img/User/img_user0.png' width='50%' height='50%' alt='User_Empty'>";
+                        }
+                   
                     ?>
                     </div>
                     <ul>

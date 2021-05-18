@@ -26,7 +26,7 @@ if(!empty($_SESSION['id'])){
     <div class="container">
 
         <div class="app">
-           
+
             <h2 class="h2 highlight" style="text-align: center;">HIPPOTEC</h2>
             <ul class="menubar">
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
@@ -39,22 +39,15 @@ if(!empty($_SESSION['id'])){
             <div class="sidenav" id="sidenav">
                 <div class="sidenavshape"></div>
                 <div class="profile">
-                <?php
-                    if(!empty($_SESSION['id'])){
-                        if($_SESSION['id'] == 1){
-                            echo "<br><img src='../img/User/matheus.png' width='50%' height='50%' alt='User_Avatar'>";
-                        }
-    
-                        else if($_SESSION['id'] == 3){
-                            echo "<br><img src='../img/User/bruno.png' width='50%' height='50%' alt='User_Avatar'>";
-                        }else{
-                            echo "<br><img src='../img/User/empty.png' width='50%' height='50%' alt='User_Avatar_Empty'>";
-                        }
+                    <?php
+                     if(!empty($_SESSION['id'])){
+                        echo "<br><img src='../img/User/img_user".$_SESSION['id'].".png' class='img_personal1' width='50%' height='50%' alt='img_user".$_SESSION['id'].".png'>";
                     }else{
-                        echo "<br><img src='../img/avatar.jpg' width='50%' height='50%' alt='User_Empty'>";
+                        echo "<br><img src='../img/User/img_user0.png' width='50%' height='50%' alt='User_Empty'>";
                     }
+               
                     ?>
-                    
+
                     <h3 style="color:white;">Menu</h3>
                 </div>
                 <!-- Itens do Menu Lateral  -->
@@ -232,7 +225,8 @@ if(!empty($_SESSION['id'])){
                 <div class="clearfix"></div>
                 <ul>
 
-                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a></li>
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                                class="fas fa-times"></i></a></li>
                     <li><a>Usuario Não Identificado</a></li>
                     <li><a href="login.php"> LOGIN </a></li>
                     <li><a href="profile.php"> PERFIL </a></li>

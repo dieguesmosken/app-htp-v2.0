@@ -38,19 +38,12 @@ session_start();
 				<div class="sidenavshape"></div>
 				<div class="profile">
 				<?php
-                    if(!empty($_SESSION['id'])){
-                        if($_SESSION['id'] == 1){
-                            echo "<br><img src='../img/User/matheus.png' width='50%' height='50%' alt='User_Avatar'>";
-                        }
-    
-                        else if($_SESSION['id'] == 3){
-                            echo "<br><img src='../img/User/bruno.png' width='50%' height='50%' alt='User_Avatar'>";
-                        }else{
-                            echo "<br><img src='../img/User/empty.png' width='50%' height='50%' alt='User_Avatar_Empty'>";
-                        }
-                    }else{
-                        echo "<br><img src='../img/avatar.jpg' width='50%' height='50%' alt='User_Empty'>";
-                    }
+                     if(!empty($_SESSION['id'])){
+						echo "<br><img src='../img/User/img_user".$_SESSION['id'].".png' class='img_personal1' width='50%' height='50%' alt='mg_user".$_SESSION['id'].".png'>";
+					}else{
+						echo "<br><img src='../img/User/img_user0.png' width='50%' height='50%' alt='User_Empty'>";
+					}
+			   
                     ?>
 					<h3 style="color:white;">Menu</h3>
 		 </div>

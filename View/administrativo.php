@@ -44,7 +44,7 @@ if(!empty($_SESSION['id'])){
             <a id="insert_t" class="button button-block button-positive"  href="cdst_tel.html">Cadastrar Telefones</a>
         </div>
         <div class="item">
-            <a id="insert_t" class="button button-block button-positive"  href="index.php">Voltar Ao Inicio</a>
+            <a id="insert_i" class="button button-block button-positive"  href="index.php">Voltar Ao Inicio</a>
         </div> 
     </div>
     <div class="bar bar-footer">
