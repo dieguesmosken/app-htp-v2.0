@@ -1126,7 +1126,7 @@ div.historia{
     border: 2px solid #fff;
     color: white;
     text-decoration: none;
-    display: inline-block;
+    display: table;
     text-align: center;
     font-size: 25px;
     line-height: 55px;

@@ -13,21 +13,7 @@ $(function(){
     
     
     $(document).ready(function() {
-        var url = "http://localhost2021/hpt/test/consulta.php";
-        $.getJSON(url, function(result) {
-            console.log(result);
-            $.each(result, function(i, field) {
-                var id = field.id;
-                var questao = field.question;
-                var resposta1  = field.answer1;
-                var resposta1  = field.answer2;
-                var resposta1  = field.answer3;
-                var resposta1  = field.answer4;
-                
-                
-                
-            });
-        });
+        console.log("passou no teste no script!")
     });
     
     
