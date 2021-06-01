@@ -322,6 +322,7 @@ if(!empty($_SESSION['id'])){
 
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.js"></script>
     <script>
     function openNav() {
         document.getElementById("sidenav").style.width = "300px";

@@ -42,13 +42,10 @@ $(function () {
                             var resposta2 = field.answer2;
                             var resposta3 = field.answer3;
                             var resposta4 = field.answer4;
-                            var size = data.length;
-                            var questions = [
 
-                            ]
+                            var questions = [];
 
                             for (var i = 0; i < idq; i++) {
-                                console.log(idq + " id");
                                 var total = questions.push(
                                     {
                                         q: questao,
@@ -56,13 +53,12 @@ $(function () {
                                         answer: 'op1'
                                     }
                                 );
-                                console.log(total);
-                                console.log(idq);
-                                //more statements₢₢₢₢₢°?////??????°°°°
+
                             }
-                            data.forEach(function () {
-                                console.log(questao + " questão " + idq);
-                            });
+                            console.log(total);
+                            console.log("espaço");
+                            console.log(questions[1]);
+
                         });
 
 
